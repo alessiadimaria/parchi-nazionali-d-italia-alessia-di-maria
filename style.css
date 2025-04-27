@@ -481,11 +481,11 @@ a {
     padding-bottom: 50px;   
 }
 
-/* RESPONSIVE HOME */
+/* RESPONSIVE */
 @media screen and (max-width: 1024px) {
-  
     main {
       max-width: 90%;
+      margin: 0 auto;
     }
     
     li {
@@ -493,12 +493,97 @@ a {
     }
     
     footer {
-      gap: 250px;
+      gap: 200px;
+    }
+    
+    .cardsingola img {
+      height: 500px;
+    }
+    
+    .cardsingola span {
+      height: 270px;
+    }
+    
+    .piuvisitati {
+      margin-bottom: 40px;
+    }
+    
+    .piuvisitati img {
+      width: 45%;
+      height: auto;
+      max-width: 488px;
+      margin-right: 20px;
+    }
+    
+    .testo {
+      width: 55%;
+    }
+    
+    .card h2, .altri h2 {
+      text-align: left;
+    }
+    
+    .titolo1 {
+      font-size: 26px;
+    }
+    
+    .didascalia {
+      font-size: 15px;
+    }
+    
+    .intro1, .intro2 {
+      gap: 30px;
+    }
+    
+    .intro1 img, .intro2 img, .intro3 img {
+      width: 45%;
+      height: auto;
+    }
+    
+    .intro3 {
+      gap: 30px;
+    }
+    
+    .attività h2 {
+      font-size: 30px;
+      text-align: left;
+    }
+    
+    .parcocontainer {
+      width: 100%;
+    }
+    
+    .trio {
+      gap: 10px;
+    }
+    
+    .sportcontainer {
+      width: 100%;
+      gap: 30px;
+    }
+    
+    .sporttype h3 {
+      font-size: 20px;
+    }
+    
+    .buttons, .buttons2, .buttons3 {
+      gap: 15px;
+      margin: 0;
+      position: static;
+    }
+    
+    .buttons2, .buttons3 {
+      margin-left: 0;
+      margin-top: 15px;
+    }
+    
+    .learnmore, .learnmore2, .learnmore3 {
+      margin: 5px;
+      min-width: 120px;
     }
   }
   
   @media screen and (max-width: 768px) {
-   
     li {
       gap: 100px;
     }
@@ -507,12 +592,21 @@ a {
       gap: 150px;
     }
     
+    nav {
+      font-size: 18px;
+    }
+    
     .hero h1 {
       font-size: 45px;
     }
     
     .hero p {
       font-size: 20px;
+      padding: 0 15px;
+    }
+    
+    .hero p br {
+      display: none;
     }
     
     .tuttelecard {
@@ -522,18 +616,73 @@ a {
     .cardsingola img {
       height: 450px;
     }
+    
+    .anteprima {
+      gap: 15px;
+    }
+    
+    .anteprima img {
+      width: 220px;
+      height: 220px;
+    }
+    
+    .piuvisitati img {
+      width: 40%;
+    }
+    
+    .testo {
+      width: 60%;
+    }
+    
+    .titolo1 {
+      font-size: 22px;
+    }
+    
+    .luogo {
+      font-size: 14px;
+    }
+    
+    .didascalia {
+      font-size: 14px;
+    }
+    
+    .didascalia br {
+      display: none;
+    }
+    
+    .bottom1 {
+      font-size: 11px;
+      padding: 6px 12px;
+    }
+    
+    .sporttype {
+      width: 30%;
+    }
+    
+    .parklist {
+      width: 70%;
+    }
+    
+    .contiene {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .flex {
+      flex-direction: column;
+    }
+    
+    .flex p {
+      width: 100%;
+    }
   }
   
   @media screen and (max-width: 480px) {
-  
     nav {
-      font-size: 16px;
+      font-size: 14px;
     }
     
     li {
       gap: 20px;
-      flex-direction: column;
-      align-items: center;
     }
     
     .hero h1 {
@@ -541,18 +690,20 @@ a {
     }
     
     .hero p {
-      font-size: 18px;
-      padding: 0 15px;
+      font-size: 16px;
+      padding: 0 10px;
     }
     
-    .hero p br {
+    br {
       display: none;
     }
     
     footer {
-      flex-direction: column;
-      gap: 20px;
-      align-items: center;
+      gap: 15px;
+      justify-content: space-between;
+      padding: 0 15px;
+      font-size: 14px;
+      text-align: center;
     }
     
     .cardsingola img {
@@ -560,12 +711,10 @@ a {
     }
     
     .cardsingola span {
-      width: 100%;
+      width: 70%;
       height: auto;
-      position: relative;
-      border-radius: 0 0 35px 35px;
+      padding: 15px;
     }
-    
 
     .anteprima {
       flex-direction: column;
@@ -576,14 +725,12 @@ a {
     .anteprima img {
       width: 100%;
       height: auto;
+      max-width: 300px;
     }
     
     .anteprima p {
       margin: 20px 0;
-    }
-    
-    .anteprima p br {
-      display: none;
+      font-size: 16px;
     }
     
     .bottom1 {
@@ -591,23 +738,7 @@ a {
       display: flex;
       justify-content: center;
     }
-  }
-  
-
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .cardsingola span {
-      width: 70%;
-      height: 280px;
-    }
     
-    .card h2 {
-      text-align: center;
-    }
-  }
-
-  /* RESPONSIVE PARCHI*/
-@media screen and (max-width: 1024px) {
-
     .piuvisitati {
       flex-direction: column;
       align-items: center;
@@ -617,761 +748,178 @@ a {
     .piuvisitati img {
       width: 100%;
       height: auto;
-      max-width: 488px;
+      max-width: 100%;
       margin-right: 0;
+      margin-bottom: 15px;
     }
     
     .testo {
-      margin-top: 20px;
-      text-align: center;
-      max-width: 90%;
+      width: 100%;
     }
     
     .titolo1 {
-      text-align: left;
-      display: inline-block;
-    }
-    
-    .bottom1 {
-      margin: 0 auto;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .hero h1 {
-      font-size: 45px;
-    }
-    
-    .hero p {
       font-size: 20px;
-      padding: 0 15px;
-    }
-    
-    .hero p br {
-      display: none;
+      text-align: left;
+      margin-left: 5px;
     }
     
     .card h2, .altri h2 {
+      text-align: left;
       font-size: 24px;
-      text-align: center;
     }
     
-    .container {
-      padding: 0 10px;
+    .intro1, .intro2, .intro3 {
+      flex-direction: column;
+      align-items: center;
     }
     
-    .didascalia br {
-      display: none;
+    .intro1 img, .intro2 img, .intro3 img {
+      width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+    
+    .intro1 .testi, .intro2 p {
+      width: 100%;
+    }
+    
+    .parcocontainer {
+      flex-direction: column;
+    }
+    
+    .parcoinfo {
+      width: 100%;
+      text-align: left;
+    }
+    
+    .parcoinfo h3 {
+      font-size: 20px;
+    }
+    
+    .buttoncontainer {
+      width: 100%;
+      text-align: left;
+      margin-top: 10px;
+    }
+    
+    .trio {
+      flex-direction: column;
+    }
+    
+    .trio img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    
+    .sportcontainer {
+      flex-direction: column;
+    }
+    
+    .sporttype {
+      width: 100%;
+      text-align: left;
+    }
+    
+    .parklist {
+      width: 100%;
+    }
+    
+    .parkscolumn {
+      flex-direction: column;
+    }
+    
+    .parco {
+      width: 100%;
+      margin: 10px 0;
+      text-align: left;
+    }
+    
+    .buttons, .buttons2, .buttons3 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .learnmore, .learnmore2, .learnmore3 {
+      width: 100%;
+      margin: 5px 0;
+    }
+    
+    .contiene {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media screen and (min-width: 481px) and (max-width: 1024px) {
+    .cardsingola span {
+      width: 70%;
+      height: 260px;
+    }
+    
+    .titolo {
+      font-size: 16px;
+    }
+    
+    .cardsingola span p {
+      font-size: 13px;
+    }
+    
+    .bottom {
+      padding: 6px 12px;
+      font-size: 10px;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    .parchipiuvisitati .contiene {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+    
+    .singolo .testo h3 {
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .parchipiuvisitati .contiene {
+      grid-template-columns: 1fr;
+    }
+    
+    .singolo {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+    
+    .singolo .testo {
+      padding: 15px;
+    }
+    
+    .singolo .testo h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    
+    .singolo .bottom2 {
+      margin-top: 10px;
+    }
+    
+    .singolo .bottom2 a {
+      padding: 10px 15px;
+      font-size: 16px;
     }
   }
   
   @media screen and (max-width: 480px) {
-    .hero h1 {
-      font-size: 35px;
-    }
-    
-    .hero p {
-      font-size: 16px;
-      padding: 0 10px;
-    }
-    
-    header ul {
-      padding: 0;
-    }
-    
-    header li {
-      flex-direction: column;
-      gap: 15px;
-      padding: 10px 0;
-    }
-    
-    .piuvisitati img {
-      max-width: 100%;
-      border-radius: 20px;
-    }
-    
-    .titolo1 {
+    .parchipiuvisitati h2 {
       font-size: 24px;
-      margin-left: 5px;
     }
     
-    .luogo {
-      font-size: 14px;
+    .singolo .testo {
+      padding: 12px;
     }
     
-    .didascalia {
-      font-size: 14px;
-      line-height: 1.4;
-    }
-    
-    .bottom1 {
-      font-size: 11px;
-      padding: 6px 12px;
-    }
-    
-    footer {
-      flex-direction: column;
-      gap: 15px;
-      align-items: center;
-      margin: 15px;
-    }
-    
-    footer p, footer li {
-      font-size: 16px;
+    .singolo .testo h3 {
+      font-size: 18px;
     }
   }
-  
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    .piuvisitati {
-      margin-bottom: 50px;
-    }
-    
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-
-  /*RESPONSIVE ATTIVITA ED ESPERIENZE*/
-
-/*RESPONSIVE ATTIVITA ED ESPERIENZE*/
-
-@media screen and (max-width: 1024px) {
-    header ul li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-    
-    header ul li a {
-        margin: 0;
-    }
-    
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-    
-    .hero p {
-        font-size: 1rem;
-    }
-    
-    .intro1, .intro2 {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .intro1 .testi, .intro2 p {
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-    }
-    
-    .intro1 img, .intro2 img, .intro3 img {
-        width: 80%;
-        margin: 20px auto;
-    }
-    
-    .intro3 {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .attività h2 {
-        font-size: 1.8rem;
-    }
-    
-    .parcocontainer {
-        width: 90%;
-    }
-    
-    .trio {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .trio img {
-        width: 80%;
-        margin: 10px auto;
-    }
-    
-    .sportcontainer {
-        width: 90%;
-    }
-    
-    .sporttype h3 {
-        font-size: 1.5rem;
-    }
-    
-    .parklist {
-        width: 100%;
-    }
-    
-    .parco h4 {
-        font-size: 1.2rem;
-    }
-    
-    .aria img {
-        width: 80%;
-        margin: 20px auto;
-    }
-    
-
-    .buttons, .buttons2, .buttons3 {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-        margin: 15px 0;
-    }
-    
-    .learnmore, .learnmore2, .learnmore3 {
-        margin: 5px;
-        min-width: 120px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    header ul li {
-        gap: 10px;
-    }
-    
-    header ul li a {
-        font-size: 0.9rem;
-    }
-    
-    .hero {
-        padding: 30px 10px;
-    }
-    
-    .hero h1 {
-        font-size: 2rem;
-        margin-bottom: 15px;
-    }
-    
-    .hero p {
-        font-size: 0.9rem;
-        line-height: 1.5;
-    }
-    
-    .hero p br {
-        display: none;
-    }
-    
-    .intro1 .testi, .intro2 p {
-        width: 95%;
-    }
-    
-    .intro1 img, .intro2 img, .intro3 img {
-        width: 95%;
-    }
-    
-    .didascalia {
-        font-size: 0.9rem;
-        padding: 0 10px;
-    }
-    
-    .attività h2 {
-        font-size: 1.5rem;
-        padding: 0 10px;
-    }
-    
-    .parcocontainer {
-        width: 95%;
-        flex-direction: column;
-    }
-    
-    .parcoinfo {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .parcoinfo h3 {
-        font-size: 1.2rem;
-    }
-    
-    .parcoinfo p {
-        font-size: 0.9rem;
-    }
-    
-    .buttoncontainer {
-        width: 100%;
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .attività img {
-        width: 95%;
-        margin: 20px auto;
-    }
-    
-    .trio img {
-        width: 95%;
-    }
-    
-    .sportcontainer {
-        width: 95%;
-        flex-direction: column;
-    }
-    
-    .sporttype {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .sporttype h3 {
-        font-size: 1.3rem;
-    }
-    
-    .parkscolumn {
-        flex-direction: column;
-    }
-    
-    .parco {
-        width: 100%;
-        margin: 10px 0;
-        text-align: center;
-    }
-    
-    .parco h4 {
-        font-size: 1.1rem;
-    }
-    
-    .parco p {
-        font-size: 0.9rem;
-    }
-    
-    .aria img {
-        width: 95%;
-    }
-    
-    footer {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding: 15px 0;
-    }
-    
-    footer p, footer nav {
-        margin: 5px 0;
-    }
-    
-
-    .buttons, .buttons2, .buttons3 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        width: 100%;
-        max-width: 300px;
-        margin: 15px auto;
-    }
-    
-    .learnmore, .learnmore2, .learnmore3 {
-        margin: 0;
-        padding: 8px 5px;
-        font-size: 0.85rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-        min-width: 0;
-    }
-    
-    
-    .buttons i, .buttons2 i, .buttons3 i {
-        font-size: 1rem;
-        margin-right: 5px;
-    }
-    
-    
-    .buttons .long-text, .buttons2 .long-text, .buttons3 .long-text {
-        font-size: 0.75rem;
-    }
-}
-
-@media screen and (max-width: 380px) {
-    br {
-        display: none;
-    }
-    
-    .intro1 .testi p, .intro2 p {
-        text-align: left;
-    }
-    
-    .bottom2 a {
-        padding: 8px 12px;
-        font-size: 0.9rem;
-    }
-    
-  
-    .buttons, .buttons2, .buttons3 {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-    }
-    
-    .learnmore, .learnmore2, .learnmore3 {
-        font-size: 0.9rem;
-        padding: 10px;
-        margin: 5px 0;
-    }
-    
-
-    .buttons i, .buttons2 i, .buttons3 i {
-        margin-right: 8px;
-    }
-}
-
-/*RESPONSIVE VISITATI*/
-
-@media screen and (max-width: 1024px) {
-    header ul li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-    
-    header ul li a {
-        margin: 0;
-    }
-    
-    .primo h1 {
-        font-size: 2.5rem;
-    }
-    
-    .primo p {
-        font-size: 1rem;
-    }
-    
-    .primo img {
-        width: 90%;
-        margin: 0 auto;
-        display: block;
-    }
-    
-    .interesse h2 {
-        font-size: 1.8rem;
-    }
-    
-    .flex {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .flex p {
-        width: 90%;
-        margin: 0 auto 20px;
-    }
-    
-    .flex img {
-        width: 90%;
-        margin: 10px auto;
-    }
-    
-    .trio {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .trio img {
-        width: 90%;
-        margin: 10px auto;
-    }
-    
-
-    .specifiche h2 {
-        font-size: 1.8rem;
-    }
-    
-    .top {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    
-    .top img {
-        width: 90%;
-        margin: 0 auto;
-        display: block;
-    }
-    
-    .floraefauna h2 {
-        font-size: 1.8rem;
-    }
-    
-    .floraefauna .flex {
-        flex-direction: column;
-    }
-    
-    .floraefauna .flex img {
-        width: 90%;
-        margin: 10px auto;
-    }
-    
-    .infoutili h2 {
-        font-size: 1.8rem;
-    }
-    
-    .infoutili .primo img {
-        width: 90%;
-        margin: 10px auto;
-    }
-    
-    .right {
-        width: 90%;
-        margin: 0 auto;
-    }
-    
-    .parchipiuvisitati h2 {
-        font-size: 1.8rem;
-    }
-    
-    .contiene {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-    
-    .singolo {
-        width: 45%;
-        margin: 10px;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .singolo img {
-        width: 100%;
-        height: auto;
-    }
-    
-    .testo {
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-    }
-    
-    .testo h3 {
-        font-size: 1.2rem;
-        margin-bottom: 10px;
-    }
-    
-
-    .bottom2 {
-        margin-top: 10px;
-    }
-    
-    .bottom2 a {
-        padding: 8px 12px;
-        font-size: 0.9rem;
-        white-space: nowrap;
-        display: inline-block;
-    }
-}
-
-@media screen and (max-width: 767px) {
-
-    header ul li {
-        gap: 10px;
-    }
-    
-    header ul li a {
-        font-size: 0.9rem;
-    }
-    
-    .primo {
-        padding: 20px 10px;
-    }
-    
-    .primo h1 {
-        font-size: 2rem;
-        margin-bottom: 15px;
-        text-align: center;
-    }
-    
-    .primo p {
-        font-size: 0.9rem;
-        line-height: 1.5;
-        text-align: left;
-    }
-    
-    .primo img {
-        width: 100%;
-    }
-    
-    .did {
-        font-size: 0.9rem;
-    }
-    
-    .interesse {
-        padding: 20px 10px;
-    }
-    
-    .h2 {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    
-    .flex p {
-        width: 100%;
-        font-size: 0.9rem;
-        text-align: left;
-    }
-    
-    .flex img {
-        width: 100%;
-    }
-    
-    .trio img {
-        width: 100%;
-    }
-    
-    .specifiche {
-        padding: 20px 10px;
-    }
-    
-    .top img {
-        width: 100%;
-    }
-    
-    .floraefauna {
-        padding: 20px 10px;
-    }
-    
-    .floraefauna .primo p {
-        font-size: 0.9rem;
-    }
-    
-    .floraefauna .flex {
-        gap: 15px !important;
-    }
-    
-    .floraefauna .flex img {
-        width: 100%;
-    }
-    
-    .infoutili {
-        padding: 20px 10px;
-    }
-    
-    .infoutili .primo p {
-        font-size: 0.9rem;
-    }
-    
-    .infoutili .primo img {
-        width: 100%;
-    }
-    
-    .right {
-        width: 100%;
-    }
-    
-    .right p {
-        font-size: 0.9rem;
-    }
-    
-    .parchipiuvisitati {
-        padding: 20px 10px;
-    }
-    
-    .parchipiuvisitati h2 {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    
-    .contiene {
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-    }
-    
-    .singolo {
-        width: 90%;
-        margin: 0;
-        height: auto;
-    }
-    
-    .singolo img {
-        width: 100%;
-        height: auto;
-    }
-    
-    .testo {
-        padding: 15px;
-        height: auto;
-    }
-    
-    .testo h3 {
-        font-size: 1.2rem;
-        margin-bottom: 15px;
-    }
-    
-    .bottom2 {
-        margin-top: 10px;
-        text-align: center;
-    }
-    
-    .bottom2 a {
-        padding: 8px 15px;
-        font-size: 0.85rem;
-        display: inline-block;
-        min-width: 100px;
-    }
-    
-    footer {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding: 15px 0;
-    }
-    
-    footer p, footer nav {
-        margin: 5px 0;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    br {
-        display: none;
-    }
-    
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-    
-    .parchipiuvisitati .singolo {
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        margin-bottom: 20px;
-    }
-    
-    .bottom2 a {
-        display: inline-block;
-        text-align: center;
-        border-radius: 4px;
-        transition: all 0.3s ease;
-    }
-    
-    .testo {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .testo h3 {
-        font-size: 1.1rem;
-    }
-    
-    .bottom2 a {
-        padding: 6px 12px;
-        font-size: 0.8rem;
-    }
-}
